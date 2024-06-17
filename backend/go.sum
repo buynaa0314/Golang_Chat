@@ -1,2 +1,2 @@
 github.com/gorilla/websocket v1.5.3 h1:sEaRWjrI+jVp/f+bXhTt43sMPE3Oq4E7aABIzfCXs3E=
-github.com/gorilla/websocket v1.5.3 h1:6+nQ7a/gltierfwYQDxAhUeZA5C5Lt78TC8AYDGPlzA=
+github.com/gorilla/websocket v1.5.3/go.mod h1:6+nQ7a/gltierfwYQDxAhUeZA5C5Lt78TC8AYDGPlzA=
