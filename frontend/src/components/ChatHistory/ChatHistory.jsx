@@ -1,6 +1,6 @@
 // ChatHistory.jsx
 import React, { Component } from 'react';
-import './ChatHistory.scss';
+import './ChatHistory.css';
 import Message from '../Message/Message';
 
 class ChatHistory extends Component {
