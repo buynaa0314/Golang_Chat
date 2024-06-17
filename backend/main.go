@@ -5,7 +5,7 @@ import (
 
 	client "_/C_/Users/ThinkPad/Desktop/Golang_Chat"
 
-	`github.com/buynaa0314/Golang_Chat/pkg/websocket`
+	github.com/buynaa0314/Golang_Chat/pkg/websocket
 )
 
 func serverWS(pool *websocket.Pool, w http.ResponseWriter, r *httpRequest) {
@@ -39,3 +39,4 @@ func setupRoutes(){
 		http.listenAndServe(" :9000", nil)
 	}
 
+main.go
