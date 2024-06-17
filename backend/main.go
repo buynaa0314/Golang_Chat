@@ -4,20 +4,20 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/buynaa0314/Golang_Chat/package/websocket"
+	"github.com/buynaa0314/Golang_Chat/package/WebSocket"
 )
 
-func serverWS(pool *websocket.Pool, w http.ResponseWriter, r *http.Request) {
+func serverWS(pool *WebSocket.Pool, w http.ResponseWriter, r *http.Request) {
 	fmt.Println("websocket endpoint reached")
 
-	conn, err := websocket.Upgrade(w, r)
+	conn, err := WebSocket.Upgrade(w, r)
 
 	if err != nil {
 		fmt.Fprintf(w, "%+v\n", err)
 		return
 	}
 
-	client := &websocket.Client{
+	client := &WebSocket.Client{
 		Conn: conn,
 		Pool: pool,
 	}
@@ -26,7 +26,7 @@ func serverWS(pool *websocket.Pool, w http.ResponseWriter, r *http.Request) {
 }
 
 func setupRoutes() {
-	pool := websocket.NewPool()
+	pool := WebSocket.NewPool()
 	go pool.Start()
 
 	http.HandleFunc("/ws", func(w http.ResponseWriter, r *http.Request) {
