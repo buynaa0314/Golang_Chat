@@ -38,5 +38,5 @@ func setupRoutes(){
 		setupRoutes()
 		http.listenAndServe(" :9000", nil)
 	}
-
+}
 main.go
