@@ -7,7 +7,7 @@ class ChatHistory extends Component{
     render(){
         console.log(this.props.ChatHistory);
 
-        this.props.ChatHistory.map(msg => <Message key={msg.timeStamp} Message={msg.data}/>);
+        this.props.chatHistory.map(msg => <Message key={msg.timeStamp} Message={msg.data}/>);
         
 
         return(
@@ -18,8 +18,8 @@ class ChatHistory extends Component{
                 </h2>
                 {Messages}
             </div>
-        )
-    }
+        );
+    };
 }
 
 export default ChatHistory

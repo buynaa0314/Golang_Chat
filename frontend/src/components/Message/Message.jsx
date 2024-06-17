@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component} from 'react';
 import './Message.scss';
 
 class Message extends Component{
@@ -13,11 +13,11 @@ class Message extends Component{
 
     render(){
         return(
-            <div className="Message"> 
+            <div className='Message'> 
                 {this.state.Message.body}
             </div>
-        )
-    }
+        );
+    };
 }
 
 export default Message;

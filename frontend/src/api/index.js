@@ -1,10 +1,10 @@
 var socket = new WebSocket('ws://localhost:9000/ws');
 
 let connect = (cb) => {
-    console.log("Connecting");
+    console.log("Connecting")
 
     socket.onopen = () =>{
-        console.log("Successful");
+        console.log("Successful")
     }
 
     socket.onmessage = (msg) =>{
