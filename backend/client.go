@@ -4,7 +4,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/buynaa0314/websocket"
+	"github.com/gorilla/websocket"
 )
 
 type Client struct {
